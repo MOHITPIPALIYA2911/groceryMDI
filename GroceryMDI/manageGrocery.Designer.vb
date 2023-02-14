@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class manageGrocery
+Partial Class groceryMaster
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,6 +41,7 @@ Partial Class manageGrocery
         Me.txtmrp = New System.Windows.Forms.TextBox()
         Me.btnupdt = New System.Windows.Forms.Button()
         Me.btndlt = New System.Windows.Forms.Button()
+        Me.stock = New System.Windows.Forms.Button()
         CType(Me.GridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -66,7 +67,7 @@ Partial Class manageGrocery
         '
         'btnsrc
         '
-        Me.btnsrc.Location = New System.Drawing.Point(269, 168)
+        Me.btnsrc.Location = New System.Drawing.Point(386, 169)
         Me.btnsrc.Name = "btnsrc"
         Me.btnsrc.Size = New System.Drawing.Size(107, 23)
         Me.btnsrc.TabIndex = 2
@@ -75,9 +76,9 @@ Partial Class manageGrocery
         '
         'txtitem
         '
-        Me.txtitem.Location = New System.Drawing.Point(12, 168)
+        Me.txtitem.Location = New System.Drawing.Point(12, 170)
         Me.txtitem.Name = "txtitem"
-        Me.txtitem.Size = New System.Drawing.Size(251, 23)
+        Me.txtitem.Size = New System.Drawing.Size(368, 23)
         Me.txtitem.TabIndex = 3
         '
         'Label1
@@ -104,7 +105,7 @@ Partial Class manageGrocery
         Me.GroupBox1.Controls.Add(Me.txtno)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtmrp)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 47)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 44)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(481, 115)
         Me.GroupBox1.TabIndex = 5
@@ -218,11 +219,21 @@ Partial Class manageGrocery
         Me.btndlt.Text = "Delete"
         Me.btndlt.UseVisualStyleBackColor = True
         '
-        'manageGrocery
+        'stock
+        '
+        Me.stock.Location = New System.Drawing.Point(566, 167)
+        Me.stock.Name = "stock"
+        Me.stock.Size = New System.Drawing.Size(107, 23)
+        Me.stock.TabIndex = 8
+        Me.stock.Text = "Show stock"
+        Me.stock.UseVisualStyleBackColor = True
+        '
+        'groceryMaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(734, 396)
+        Me.Controls.Add(Me.stock)
         Me.Controls.Add(Me.btndlt)
         Me.Controls.Add(Me.btnupdt)
         Me.Controls.Add(Me.GroupBox1)
@@ -231,8 +242,8 @@ Partial Class manageGrocery
         Me.Controls.Add(Me.btnsrc)
         Me.Controls.Add(Me.btnsw)
         Me.Controls.Add(Me.GridView)
-        Me.Name = "manageGrocery"
-        Me.Text = "manageGrocery"
+        Me.Name = "groceryMaster"
+        Me.Text = "Grocery Master"
         CType(Me.GridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -260,4 +271,5 @@ Partial Class manageGrocery
     Friend WithEvents btnadd As Button
     Friend WithEvents btnupdt As Button
     Friend WithEvents btndlt As Button
+    Friend WithEvents stock As Button
 End Class
